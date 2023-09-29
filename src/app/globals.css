@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: black;
+  background-color: #94a3b8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* styles/globals.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* Your other global styles go here */
+
+
+/* Navbar css */
+.nav-container {
+  display: flex;
+  align-items: center;
+  background-color: aquamarine;
+  font-size: 36px;
+  font-weight: 700;
+  height: 30px;
+}
+
+.nav-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70%;
+}
+
+.nav-ele {
+  margin-right: 20px;
+}
+
+
+
+
+/* components/Footer.module.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.contact,
+.social {
+  flex: 1;
+}
+
+.contact h4,
+.social h4 {
+  font-size: 1.2rem;
+}
+
+.contact p,
+.social a {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.social a {
+  display: block;
+}
+
+.bottomBar {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #222;
+}
+
+.bottomBar p {
+  margin: 0;
+  font-size: 0.9rem;
+}
