@@ -32,6 +32,11 @@ const links = [
         id: 5,
         title: "Login",
         url: "/login"
+    },
+    {
+        id:6,
+        title:"Landing",
+        url:"/Loading",
     }
 ];
 
@@ -52,7 +57,7 @@ export default function Navbar() {
                             <Link className="nav-link" href="/about">about</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Link className="nav-link dropdown-toggle" href="/learn" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle" href="/Loading" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Learn
                             </Link>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
