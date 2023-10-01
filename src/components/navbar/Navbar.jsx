@@ -10,12 +10,12 @@ const MyNavbar = () => {
             <Navbar.Brand href="/">Navbar</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Form inline className="mr-auto ">
+{/* TO DO                    add search icon */}
+                {/* <Form inline className="mr-auto ">
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
 
-                    {/* TO DO                    add search icon */}
-                    {/* <Button variant="outline-success">Search</Button> */}
-                </Form>
+                    <Button variant="outline-success">Search</Button>
+                </Form> */}
                 <Nav className="ms-auto">
                     <Link href='/'>Home</Link>
                     <NavDropdown title="Startup" id="basic-nav-dropdown">
