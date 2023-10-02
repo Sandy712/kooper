@@ -1,3 +1,6 @@
+/* styles/globals.css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +12,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   color: black;
-  background-color: #94a3b8;
+  /* background-color: #94a3b8; */
 }
 
 a {
@@ -17,8 +20,6 @@ a {
   color: inherit;
 }
 
-/* styles/globals.css */
-@import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -27,54 +28,109 @@ a {
 
 /* components/Footer.module.css */
 .footer {
-  background-color: #333;
+  background-color: #222;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: white;
-  padding: 2rem 0;
 }
 
-.container {
+.linksColumn {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  min-width: 80%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  margin: 0 0.25rem;
+}
+
+.footerEnd {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  min-width: 75%;
+  margin-top: 1.5rem;
 }
 
-.logo img {
-  width: 100px;
-  height: auto;
-}
-
-.contact,
-.social {
-  flex: 1;
-}
-
-.contact h4,
-.social h4 {
-  font-size: 1.2rem;
-}
-
-.contact p,
-.social a {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+.Link {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  color: #ccc;
+  margin: 0.25rem 0;
 }
 
-.social a {
-  display: block;
+.ayushPortal {
+  color: white !important;
 }
 
-.bottomBar {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #222;
+@media screen and (min-device-width: 770px) and (max-device-width: 800px) {
+  .footerEnd {
+    min-width: 75%;
+  }
+
+  .linksColumn {
+    min-width: 85%;
+  }
 }
 
-.bottomBar p {
-  margin: 0;
-  font-size: 0.9rem;
+@media screen and (min-device-width: 480px) and (max-device-width: 770px) {
+  .footerEnd {
+    display: grid;
+    min-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .column {
+    margin: 2rem;
+  }
+
+  .linkMargin {
+    margin: 1rem;
+  }
+
+  .linksColumn {
+    display: grid;
+    min-width: 70%;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .linksColumn {
+    display: grid;
+    /* min-width: 70%; */
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+  }
+
+  .linksColumn {
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  .footerEnd {
+    display: grid;
+    min-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .column {
+    margin: 2rem;
+  }
+
+  .linkMargin {
+    margin: 1rem 0;
+  }
 }
